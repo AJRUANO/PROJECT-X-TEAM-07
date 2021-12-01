@@ -22,25 +22,25 @@ public class ControlWeaponSystem {
         System.out.println("Ammunition is ---> " + ammunition);
         System.out.println("WarMaterial is ---> " + warMaterial);
 
-        System.out.println("------->Javier Paucar<-------");
+        System.out.println("\n------->Javier Paucar<-------");
         Warehouse warehouse = new Warehouse();
         Control control = new Control();
         System.out.println("Warehouse is --->" + warehouse);
         System.out.println("Control is --->" + control);
-        
-        System.out.println("------->Sanchez Jose<-------");
+
+        System.out.println("\n------->Sanchez Jose<-------");
         Weapon weapon = new Weapon();
         Program program = new Program();
         System.out.println("Weapon is --->" + weapon);
         System.out.println("Program is --->" + program);
-        
-        System.out.println("------->Leandro Quinga<-------");
+
+        System.out.println("\n------->Leandro Quinga<-------");
         Explosive explosive = new Explosive();
         System.out.println("Explosive is --->" + explosive);
-        
-        System.out.println("------->Paul Saltos<-------");
-        Time time = new Time ();
+
+        System.out.println("\n------->Paul Saltos<-------");
+        Time time = new Time();
         System.out.println("Time is --->" + time);
-     
+
     }
 }

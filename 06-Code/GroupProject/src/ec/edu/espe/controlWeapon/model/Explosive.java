@@ -9,16 +9,17 @@ import java.util.Scanner;
  * 
  */
 public class Explosive {
-    
+
     private String sort;
     private String name;
     private int amount;
-    
-    public void doExploted(){
-        
-    } 
-    private void detonate(){
-        
+
+    public void doExploted() {
+
+    }
+
+    private void detonate() {
+
     }
 
     @Override
@@ -31,8 +32,8 @@ public class Explosive {
         this.name = name;
         this.amount = amount;
     }
-    
-    public Explosive(){
+
+    public Explosive() {
         System.out.println("\n--------------->Data Explosive<------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("--- sort -->");
@@ -84,7 +85,5 @@ public class Explosive {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-    
-    
-    
+
 }
