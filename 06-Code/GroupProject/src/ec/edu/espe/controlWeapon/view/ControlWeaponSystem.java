@@ -4,6 +4,7 @@ import ec.edu.espe.controlWeapon.model.Ammunition;
 import ec.edu.espe.controlWeapon.model.WarMaterial;
 import ec.edu.espe.controlWeapon.model.Warehouse;
 import ec.edu.espe.controlWeapon.model.Control;
+import ec.edu.espe.controlWeapon.model.Explosive;
 import ec.edu.espe.controlWeapon.model.Program;
 import ec.edu.espe.controlWeapon.model.Weapon;
 
@@ -29,7 +30,12 @@ public class ControlWeaponSystem {
         System.out.println("------->Sanchez Jose<-------");
         Weapon weapon = new Weapon();
         Program program = new Program();
-        System.out.println("weapon is --->" + weapon);
-        System.out.println("program is --->" + program);
+        System.out.println("Weapon is --->" + weapon);
+        System.out.println("Program is --->" + program);
+        
+        System.out.println("------->Leandro Quinga<-------");
+        Explosive explosive = new Explosive();
+        System.out.println("Explosive is --->" + explosive);
+     
     }
 }
