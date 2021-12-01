@@ -2,7 +2,8 @@ package ec.edu.espe.controlWeapon.view;
 
 import ec.edu.espe.controlWeapon.model.Ammunition;
 import ec.edu.espe.controlWeapon.model.WarMaterial;
-
+import ec.edu.espe.controlWeapon.model.Warehouse;
+import ec.edu.espe.controlWeapon.model.Control;
 
 /**
  *
@@ -17,6 +18,11 @@ public class ControlWeaponSystem {
         System.out.println("Ammunition is ---> " + ammunition);
         System.out.println("WarMaterial is ---> " + warMaterial);
 
+        System.out.println("------->Javier Paucar<-------");
+        Warehouse warehouse = new Warehouse();
+        Control control = new Control();
+        System.out.println("Warehouse is --->" + warehouse);
+        System.out.println("Control is --->" + control);
 
     }
 }
