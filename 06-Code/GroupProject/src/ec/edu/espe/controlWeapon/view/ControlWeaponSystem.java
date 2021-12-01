@@ -6,6 +6,7 @@ import ec.edu.espe.controlWeapon.model.Warehouse;
 import ec.edu.espe.controlWeapon.model.Control;
 import ec.edu.espe.controlWeapon.model.Explosive;
 import ec.edu.espe.controlWeapon.model.Program;
+import ec.edu.espe.controlWeapon.model.Time;
 import ec.edu.espe.controlWeapon.model.Weapon;
 
 /**
@@ -36,6 +37,10 @@ public class ControlWeaponSystem {
         System.out.println("------->Leandro Quinga<-------");
         Explosive explosive = new Explosive();
         System.out.println("Explosive is --->" + explosive);
+        
+        System.out.println("------->Paul Saltos<-------");
+        Time time = new Time ();
+        System.out.println("Time is --->" + time);
      
     }
 }
