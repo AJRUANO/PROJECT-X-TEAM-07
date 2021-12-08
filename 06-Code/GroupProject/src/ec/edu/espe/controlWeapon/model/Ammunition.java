@@ -8,9 +8,9 @@ import java.util.Scanner;
  */
 public class Ammunition {
 
-     private String name;
-     private String color;
-     private String model;
+    private String name;
+    private String color;
+    private String model;
 
     public void save() {
 
@@ -28,13 +28,10 @@ public class Ammunition {
 
     }
 
-    
     @Override
     public String toString() {
         return "Ammunition{" + "name=" + name + ", color=" + color + ", model=" + model + '}';
     }
-    
-    
 
     public Ammunition(String name, String color, String model) {
         this.name = name;
@@ -43,7 +40,7 @@ public class Ammunition {
     }
 
     public Ammunition() {
-        
+
         System.out.println("\n---------------> DATA Ammunition1 <--------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("---  name  --> ");
@@ -52,10 +49,8 @@ public class Ammunition {
         color = scanner.next();
         System.out.println("---  model --> ");
         model = scanner.next();
- 
+
     }
-
-
 
     /**
      * @return the name
@@ -98,5 +93,5 @@ public class Ammunition {
     public void setModel(String model) {
         this.model = model;
     }
-      
+
 }

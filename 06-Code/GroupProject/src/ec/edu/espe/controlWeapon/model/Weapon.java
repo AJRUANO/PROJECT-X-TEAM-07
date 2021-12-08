@@ -1,5 +1,7 @@
 package ec.edu.espe.controlWeapon.model;
 
+import java.util.Scanner;
+
 /**
  *
  * @author sanchez jose
@@ -12,8 +14,12 @@ public class Weapon {
     private int serie;
     private String type;
 
-    public Weapon() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void propeelProyectiles() {
+
+    }
+
+    private void destroy() {
+
     }
 
     @Override
@@ -29,11 +35,20 @@ public class Weapon {
         this.type = type;
     }
 
-    public void propeelProyectiles() {
+    public Weapon() {
 
-    }
-
-    private void destroy() {
+        System.out.println("-------->Data Weapon<-------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("--- Name-->");
+        name = scanner.next();
+        System.out.println("--- Color-->");
+        name = scanner.next();
+        System.out.println("--- Model-->");
+        model = scanner.next();
+        System.out.println("---Serie-->");
+        serie = scanner.nextInt();
+        System.out.println("---Type-->");
+        type = scanner.next();
 
     }
 
