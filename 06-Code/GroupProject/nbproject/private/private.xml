@@ -2,11 +2,27 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
+        <group/>
+=======
         <group>
+<<<<<<< HEAD
             <file>file:/E:/espe/SEGUNDO%20SEMESTRE/PROGRAMA%20ORIENTADA%20A%20OBJETOS/CODIGO/Mirepositorio/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Control.java</file>
             <file>file:/E:/espe/SEGUNDO%20SEMESTRE/PROGRAMA%20ORIENTADA%20A%20OBJETOS/CODIGO/Mirepositorio/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Weapon.java</file>
             <file>file:/E:/espe/SEGUNDO%20SEMESTRE/PROGRAMA%20ORIENTADA%20A%20OBJETOS/CODIGO/Mirepositorio/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/view/ControlWeaponSystem.java</file>
             <file>file:/E:/espe/SEGUNDO%20SEMESTRE/PROGRAMA%20ORIENTADA%20A%20OBJETOS/CODIGO/Mirepositorio/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Program.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/javie.DESKTOP-14EQ043/Desktop/PROYECTO%20POO/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Warehouse.java</file>
+            <file>file:/C:/Users/javie.DESKTOP-14EQ043/Desktop/PROYECTO%20POO/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Time.java</file>
+            <file>file:/C:/Users/javie.DESKTOP-14EQ043/Desktop/PROYECTO%20POO/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Control.java</file>
+            <file>file:/C:/Users/javie.DESKTOP-14EQ043/Desktop/PROYECTO%20POO/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/view/ControlWeaponSystem.java</file>
+=======
+            <file>file:/C:/Users/Usuario/OneDrive/Documentos/ESPE/Semestre%202/POO/ProjectX/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/model/Explosive.java</file>
+            <file>file:/C:/Users/Usuario/OneDrive/Documentos/ESPE/Semestre%202/POO/ProjectX/PROJECT-X-TEAM-07/06-Code/GroupProject/src/ec/edu/espe/controlWeapon/view/ControlWeaponSystem.java</file>
+>>>>>>> 9abcc580b6daebb742c4bc4063dadf08feda4373
+>>>>>>> 326b6a858eb6afb268c159c0c5bd7cace2a24dc7
         </group>
+>>>>>>> 571c9ce5b0924654bef800d4028abdabe13299d7
     </open-files>
 </project-private>

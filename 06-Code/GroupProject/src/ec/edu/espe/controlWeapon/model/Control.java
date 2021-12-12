@@ -9,35 +9,9 @@ import java.util.Scanner;
 public class Control {
 
     private String name;
-    private String colour;
+    private String color;
     private String model;
     private int yearFabrication;
-
-    public Control(String name, String colour, String model, int yearFabrication) {
-        this.name = name;
-        this.colour = colour;
-        this.model = model;
-        this.yearFabrication = yearFabrication;
-    }
-
-    public Control() {
-
-        System.out.println("\n--------> DATA Control 1 <--------");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("---> name <---");
-        name = scanner.next();
-        System.out.println("---> colour <---");
-        colour = scanner.next();
-        System.out.println("---> model <---");
-        model = scanner.next();
-        System.out.println("---> year fundation <---");
-        yearFabrication = scanner.nextInt();
-    }
-
-    @Override
-    public String toString() {
-        return "Control{" + "name=" + name + ", colour=" + colour + ", model=" + model + ", yearFabrication=" + yearFabrication + '}';
-    }
 
     public void organize() {
 
@@ -53,6 +27,32 @@ public class Control {
 
     public void calculate() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Control{" + "name=" + name + ", color=" + color + ", model=" + model + ", yearFabrication=" + yearFabrication + '}';
+    }
+
+    public Control(String name, String color, String model, int yearFabrication) {
+        this.name = name;
+        this.color = color;
+        this.model = model;
+        this.yearFabrication = yearFabrication;
+    }
+
+    public Control() {
+
+        System.out.println("\n--------> DATA Control 1 <--------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---> name <---");
+        name = scanner.next();
+        System.out.println("---> color <---");
+        color = scanner.next();
+        System.out.println("---> model <---");
+        model = scanner.next();
+        System.out.println("---> year fundation <---");
+        yearFabrication = scanner.nextInt();
     }
 
     /**
@@ -73,14 +73,14 @@ public class Control {
      * @return the colour
      */
     public String getColour() {
-        return colour;
+        return color;
     }
 
     /**
-     * @param colour the colour to set
+     * @param color the colour to set
      */
-    public void setColour(String colour) {
-        this.colour = colour;
+    public void setColour(String color) {
+        this.color = color;
     }
 
     /**

@@ -14,6 +14,29 @@ public class Warehouse {
     private int number;
     private int yearFundation;
 
+    private void security() {
+
+    }
+
+    private void intelligence() {
+
+    }
+
+    public void support() {
+
+    }
+
+    public Troops defended() {
+
+        return new Troops();
+
+    }
+
+    @Override
+    public String toString() {
+        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
+    }
+
     public Warehouse(String name, String country, String city, int number, int yearFundation) {
         this.name = name;
         this.country = country;
@@ -35,29 +58,6 @@ public class Warehouse {
         number = scanner.nextInt();
         System.out.println("---> year fundation <---");
         yearFundation = scanner.nextInt();
-    }
-
-    @Override
-    public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
-    }
-
-    private void security() {
-
-    }
-
-    private void intelligence() {
-
-    }
-
-    public void support() {
-
-    }
-
-    public Troops defended() {
-
-        return new Troops();
-
     }
 
     /**
