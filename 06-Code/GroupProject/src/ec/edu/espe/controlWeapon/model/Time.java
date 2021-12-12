@@ -13,6 +13,18 @@ public class Time {
     private String date;
     private String number;
 
+    public void organize() {
+
+    }
+
+    private void registration() {
+
+    }
+
+    public void calculate() {
+
+    }
+
     @Override
     public String toString() {
         return "Time{" + "name=" + getName() + ", model=" + getModel() + ", date=" + getDate() + ", number=" + getNumber() + '}';
@@ -24,9 +36,9 @@ public class Time {
         this.date = date;
         this.number = number;
     }
-    
+
     public Time() {
-        
+
         System.out.println("\n---------------> DATA TIME <--------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("---  name  --> ");
@@ -37,18 +49,6 @@ public class Time {
         date = scanner.next();
         System.out.println("---  number --> ");
         number = scanner.next();
- 
-    }
-
-    public void organize() {
-
-    }
-
-    private void registration() {
-
-    }
-
-    public void calculate() {
 
     }
 

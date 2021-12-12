@@ -1,10 +1,12 @@
 package ec.edu.espe.controlWeapon.model;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  *
  * @author Javier Paucar
+ * @author Alexander Ruano
  */
 public class Warehouse {
 
@@ -13,34 +15,8 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
-
-    public Warehouse(String name, String country, String city, int number, int yearFundation) {
-        this.name = name;
-        this.country = country;
-        this.city = city;
-        this.number = number;
-        this.yearFundation = yearFundation;
-    }
-
-    public Warehouse() {
-        System.out.println("\n--------> DATA Warehouse 1 <--------");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("---> name <---");
-        name = scanner.next();
-        System.out.println("---> country <---");
-        country = scanner.next();
-        System.out.println("---> city <---");
-        city = scanner.next();
-        System.out.println("---> number <---");
-        number = scanner.nextInt();
-        System.out.println("---> year fundation <---");
-        yearFundation = scanner.nextInt();
-    }
-
-    @Override
-    public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
-    }
+    private ArrayList<Ammunition> ammunitions;
+    private ArrayList<WarMaterial> warMaterials;
 
     private void security() {
 
@@ -58,6 +34,38 @@ public class Warehouse {
 
         return new Troops();
 
+    }
+
+    @Override
+    public String toString() {
+        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
+    }
+
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials) {
+        this.name = name;
+        this.country = country;
+        this.city = city;
+        this.number = number;
+        this.yearFundation = yearFundation;
+        this.ammunitions = ammunitions;
+        this.warMaterials = warMaterials;
+    }
+
+
+
+    public Warehouse() {
+        System.out.println("\n--------> DATA Warehouse 1 <--------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---> name <---");
+        name = scanner.next();
+        System.out.println("---> country <---");
+        country = scanner.next();
+        System.out.println("---> city <---");
+        city = scanner.next();
+        System.out.println("---> number <---");
+        number = scanner.nextInt();
+        System.out.println("---> year fundation <---");
+        yearFundation = scanner.nextInt();
     }
 
     /**

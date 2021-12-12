@@ -1,5 +1,6 @@
 package ec.edu.espe.controlWeapon.model;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -8,33 +9,31 @@ import java.util.Scanner;
  */
 public class Ammunition {
 
-     private String name;
-     private String color;
-     private String model;
+    private String name;
+    private String color;
+    private String model;
+
 
     public void save() {
 
     }
 
-    private void delete() {
+    public void delete() {
 
     }
 
-    private void organize() {
+    public void organize() {
 
     }
 
-    private void use() {
+    public void use() {
 
     }
 
-    
     @Override
     public String toString() {
         return "Ammunition{" + "name=" + name + ", color=" + color + ", model=" + model + '}';
     }
-    
-    
 
     public Ammunition(String name, String color, String model) {
         this.name = name;
@@ -42,8 +41,9 @@ public class Ammunition {
         this.model = model;
     }
 
+ 
     public Ammunition() {
-        
+
         System.out.println("\n---------------> DATA Ammunition1 <--------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("---  name  --> ");
@@ -52,10 +52,8 @@ public class Ammunition {
         color = scanner.next();
         System.out.println("---  model --> ");
         model = scanner.next();
- 
+
     }
-
-
 
     /**
      * @return the name
@@ -98,5 +96,5 @@ public class Ammunition {
     public void setModel(String model) {
         this.model = model;
     }
-      
+
 }

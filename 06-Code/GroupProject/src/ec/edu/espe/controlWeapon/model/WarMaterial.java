@@ -7,10 +7,12 @@ import java.util.Scanner;
  * @author Alexander Ruano
  */
 public class WarMaterial {
+
     private String name;
     private String color;
     private String model;
-    
+
+
     public void save() {
 
     }
@@ -18,32 +20,28 @@ public class WarMaterial {
     private void delete() {
 
     }
-    
-    private void organize(){
-        
-    }
-    
-    private void use(){
-        
+
+    private void organize() {
+
     }
 
-    
+    private void use() {
+
+    }
+
     @Override
     public String toString() {
         return "WarMaterial{" + "name=" + name + ", color=" + color + ", model=" + model + '}';
     }
-    
-    
 
     public WarMaterial(String name, String color, String model) {
         this.name = name;
         this.color = color;
         this.model = model;
     }
-    
-    
+
     public WarMaterial() {
-        
+
         System.out.println("\n---------------> DATA WarMaterial 1 <--------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("---  name  --> ");
@@ -52,9 +50,8 @@ public class WarMaterial {
         color = scanner.next();
         System.out.println("---  model --> ");
         model = scanner.next();
- 
+
     }
-    
 
     /**
      * @return the name
@@ -97,5 +94,5 @@ public class WarMaterial {
     public void setModel(String model) {
         this.model = model;
     }
-    
+
 }
