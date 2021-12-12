@@ -1,6 +1,5 @@
 package ec.edu.espe.controlWeapon.model;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
