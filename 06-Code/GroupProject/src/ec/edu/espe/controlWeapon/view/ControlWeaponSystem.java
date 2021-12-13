@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Alexander Ruano
+ * @author Alexander Ruano, Leandro Quinga 
  */
 public class ControlWeaponSystem {
 
