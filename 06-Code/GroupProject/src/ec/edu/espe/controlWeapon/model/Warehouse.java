@@ -1,5 +1,6 @@
 package ec.edu.espe.controlWeapon.model;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -13,7 +14,12 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
+    private ArrayList<Explosive>explosives;
+    
 
+    
+    
+    
     private void security() {
 
     }
@@ -34,16 +40,20 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
+        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + ", explosive=" + explosives + '}';
     }
 
-    public Warehouse(String name, String country, String city, int number, int yearFundation) {
+    
+
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Explosive> explosives) {
         this.name = name;
         this.country = country;
         this.city = city;
         this.number = number;
         this.yearFundation = yearFundation;
+        this.explosives = explosives;
     }
+
 
     public Warehouse() {
         System.out.println("\n--------> DATA Warehouse 1 <--------");
@@ -129,5 +139,20 @@ public class Warehouse {
     public void setYearFundation(int yearFundation) {
         this.yearFundation = yearFundation;
     }
+
+    /**
+     * @return the explosive
+     */
+    public ArrayList<Explosive> getExplosive() {
+        return explosives;
+    }
+
+    /**
+     * @param explosive the explosive to set
+     */
+    public void setExplosive(ArrayList<Explosive> explosive) {
+        this.explosives = explosive;
+    }
+    
 
 }

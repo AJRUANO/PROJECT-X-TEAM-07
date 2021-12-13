@@ -8,6 +8,7 @@ import ec.edu.espe.controlWeapon.model.Explosive;
 import ec.edu.espe.controlWeapon.model.Program;
 import ec.edu.espe.controlWeapon.model.Time;
 import ec.edu.espe.controlWeapon.model.Weapon;
+import java.util.ArrayList;
 
 /**
  *
@@ -35,6 +36,7 @@ public class ControlWeaponSystem {
         System.out.println("Program is --->" + program);
 
         System.out.println("\n------->Leandro Quinga<-------");
+        ArrayList<Explosive>explosives = new ArrayList<>();      
         Explosive explosive = new Explosive();
         System.out.println("Explosive is --->" + explosive);
 
