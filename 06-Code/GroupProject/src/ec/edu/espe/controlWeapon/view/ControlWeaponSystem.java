@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Alexander Ruano, Leandro Quinga 
+ * @author Alexander Ruano, Leandro Quinga , Javier Paucar
  */
 public class ControlWeaponSystem {
 
@@ -25,6 +25,8 @@ public class ControlWeaponSystem {
         System.out.println("WarMaterial is ---> " + warMaterial);
 
         System.out.println("\n------->Javier Paucar<-------");
+        ArrayList<Warehouse> warehouses = new ArrayList<>();
+        ArrayList<Control> controls = new ArrayList<>();
         Warehouse warehouse = new Warehouse();
         Control control = new Control();
         System.out.println("Warehouse is --->" + warehouse);

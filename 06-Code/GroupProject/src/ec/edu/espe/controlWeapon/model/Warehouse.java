@@ -15,15 +15,35 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
-<<<<<<< HEAD
-    private ArrayList<Explosive>explosives;
-    
-=======
     private ArrayList<Ammunition> ammunitions;
     private ArrayList<WarMaterial> warMaterials;
->>>>>>> d9a13afd5aa0c608a305b557f7dc7880ffbb46df
+    private ArrayList<Warehouse> warehouses;
+    private ArrayList<Control> controls;
 
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Warehouse> warehouses, ArrayList<Control> controls) {
+        this.name = name;
+        this.country = country;
+        this.city = city;
+        this.number = number;
+        this.yearFundation = yearFundation;
+        this.ammunitions = ammunitions;
+        this.warMaterials = warMaterials;
+        this.warehouses = warehouses;
+        this.controls = controls;
+    }
     
+    
+
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Warehouse> warehouses) {
+        this.name = name;
+        this.country = country;
+        this.city = city;
+        this.number = number;
+        this.yearFundation = yearFundation;
+        this.ammunitions = ammunitions;
+        this.warMaterials = warMaterials;
+        this.warehouses = warehouses;
+    }
     
     
     private void security() {
@@ -46,34 +66,9 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + ", explosive=" + explosives + '}';
+        return "Warehouse{" + "name=" + getName() + ", country=" + getCountry() + ", city=" + getCity() + ", number=" + getNumber() + ", yearFundation=" + getYearFundation() + '}';
     }
 
-<<<<<<< HEAD
-    
-
-    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Explosive> explosives) {
-=======
-    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials) {
->>>>>>> d9a13afd5aa0c608a305b557f7dc7880ffbb46df
-        this.name = name;
-        this.country = country;
-        this.city = city;
-        this.number = number;
-        this.yearFundation = yearFundation;
-<<<<<<< HEAD
-        this.explosives = explosives;
-    }
-
-
-=======
-        this.ammunitions = ammunitions;
-        this.warMaterials = warMaterials;
-    }
-
-
-
->>>>>>> d9a13afd5aa0c608a305b557f7dc7880ffbb46df
     public Warehouse() {
         System.out.println("\n--------> DATA Warehouse 1 <--------");
         Scanner scanner = new Scanner(System.in);
@@ -160,18 +155,59 @@ public class Warehouse {
     }
 
     /**
-     * @return the explosive
+     * @return the ammunitions
      */
-    public ArrayList<Explosive> getExplosive() {
-        return explosives;
+    public ArrayList<Ammunition> getAmmunitions() {
+        return ammunitions;
     }
 
     /**
-     * @param explosive the explosive to set
+     * @param ammunitions the ammunitions to set
      */
-    public void setExplosive(ArrayList<Explosive> explosive) {
-        this.explosives = explosive;
+    public void setAmmunitions(ArrayList<Ammunition> ammunitions) {
+        this.ammunitions = ammunitions;
     }
-    
+
+    /**
+     * @return the warMaterials
+     */
+    public ArrayList<WarMaterial> getWarMaterials() {
+        return warMaterials;
+    }
+
+    /**
+     * @param warMaterials the warMaterials to set
+     */
+    public void setWarMaterials(ArrayList<WarMaterial> warMaterials) {
+        this.warMaterials = warMaterials;
+    }
+
+    /**
+     * @return the warehouses
+     */
+    public ArrayList<Warehouse> getWarehouses() {
+        return warehouses;
+    }
+
+    /**
+     * @param warehouses the warehouses to set
+     */
+    public void setWarehouses(ArrayList<Warehouse> warehouses) {
+        this.warehouses = warehouses;
+    }
+
+    /**
+     * @return the controls
+     */
+    public ArrayList<Control> getControls() {
+        return controls;
+    }
+
+    /**
+     * @param controls the controls to set
+     */
+    public void setControls(ArrayList<Control> controls) {
+        this.controls = controls;
+    }
 
 }
