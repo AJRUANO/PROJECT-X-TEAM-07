@@ -16,12 +16,45 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
+<<<<<<< HEAD
     private ArrayList<Explosive>explosives;
     private ArrayList<Ammunition> ammunitions;
     private ArrayList<WarMaterial> warMaterials;
 
+=======
 
+    private ArrayList<Weapon> weapons;
+    private ArrayList<Ammunition> ammunitions;
+    private ArrayList<WarMaterial> warMaterials;
+    private ArrayList<Warehouse> warehouses;
+    private ArrayList<Control> controls;
+>>>>>>> 7a4e07aa4132ee3ba59f40823a050aaed8d45420
+
+
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Warehouse> warehouses, ArrayList<Control> controls) {
+        this.name = name;
+        this.country = country;
+        this.city = city;
+        this.number = number;
+        this.yearFundation = yearFundation;
+        this.ammunitions = ammunitions;
+        this.warMaterials = warMaterials;
+        this.warehouses = warehouses;
+        this.controls = controls;
+    }
     
+    
+
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Warehouse> warehouses) {
+        this.name = name;
+        this.country = country;
+        this.city = city;
+        this.number = number;
+        this.yearFundation = yearFundation;
+        this.ammunitions = ammunitions;
+        this.warMaterials = warMaterials;
+        this.warehouses = warehouses;
+    }
     
     
     private void security() {
@@ -44,24 +77,38 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + ", explosive=" + explosives + '}';
+        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
     }
 
+<<<<<<< HEAD
 
     public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials,  ArrayList<Explosive> explosives){
+=======
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Weapon> weapons) {
+>>>>>>> 7a4e07aa4132ee3ba59f40823a050aaed8d45420
         this.name = name;
         this.country = country;
         this.city = city;
         this.number = number;
         this.yearFundation = yearFundation;
+<<<<<<< HEAD
         this.explosives = explosives;
         this.ammunitions = ammunitions;
         this.warMaterials = warMaterials;
+=======
+        this.weapons = weapons;
+
+      
+>>>>>>> 7a4e07aa4132ee3ba59f40823a050aaed8d45420
     }
 
+   
+
+<<<<<<< HEAD
 
 
-
+=======
+>>>>>>> 7a4e07aa4132ee3ba59f40823a050aaed8d45420
     public Warehouse() {
         System.out.println("\n--------> DATA Warehouse 1 <--------");
         Scanner scanner = new Scanner(System.in);
@@ -148,18 +195,20 @@ public class Warehouse {
     }
 
     /**
-     * @return the explosive
+<<<<<<< HEAD
+     * @return the weapons
      */
-    public ArrayList<Explosive> getExplosive() {
-        return explosives;
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
     }
 
     /**
-     * @param explosive the explosive to set
+     * @param weapons the weapons to set
      */
-    public void setExplosive(ArrayList<Explosive> explosive) {
-        this.explosives = explosive;
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
     }
-    
 
 }
+
+  

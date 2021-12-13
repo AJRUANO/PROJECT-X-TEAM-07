@@ -11,7 +11,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Alexander Ruano, Leandro Quinga 
+<<<<<<< HEAD
+ * @author ASUS
+ * @author Alexander Ruano, Leandro Quinga , Javier Paucar, Jose Sanchez;
  */
 public class ControlWeaponSystem {
 
@@ -25,6 +27,8 @@ public class ControlWeaponSystem {
         System.out.println("WarMaterial is ---> " + warMaterial);
 
         System.out.println("\n------->Javier Paucar<-------");
+        ArrayList<Warehouse> warehouses = new ArrayList<>();
+        ArrayList<Control> controls = new ArrayList<>();
         Warehouse warehouse = new Warehouse();
         Control control = new Control();
         System.out.println("Warehouse is --->" + warehouse);
@@ -32,6 +36,8 @@ public class ControlWeaponSystem {
 
         System.out.println("\n------->Sanchez Jose<-------");
         Weapon weapon = new Weapon();
+        ArrayList<Weapon> weapons = new ArrayList<>();
+
         System.out.println("Weapon is --->" + weapon);
 
         System.out.println("\n------->Leandro Quinga<-------");
