@@ -1,5 +1,6 @@
 package ec.edu.espe.controlWeapon.model;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -13,6 +14,7 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
+    private ArrayList<Weapon> weapons;
 
     private void security() {
 
@@ -37,13 +39,16 @@ public class Warehouse {
         return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
     }
 
-    public Warehouse(String name, String country, String city, int number, int yearFundation) {
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Weapon> weapons) {
         this.name = name;
         this.country = country;
         this.city = city;
         this.number = number;
         this.yearFundation = yearFundation;
+        this.weapons = weapons;
     }
+
+   
 
     public Warehouse() {
         System.out.println("\n--------> DATA Warehouse 1 <--------");
@@ -128,6 +133,20 @@ public class Warehouse {
      */
     public void setYearFundation(int yearFundation) {
         this.yearFundation = yearFundation;
+    }
+
+    /**
+     * @return the weapons
+     */
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
+    }
+
+    /**
+     * @param weapons the weapons to set
+     */
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
     }
 
 }
