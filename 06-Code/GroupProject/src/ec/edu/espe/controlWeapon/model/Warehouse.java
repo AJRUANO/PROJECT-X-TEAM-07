@@ -15,14 +15,13 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
-<<<<<<< HEAD
+
     private ArrayList<Weapon> weapons;
-=======
     private ArrayList<Ammunition> ammunitions;
     private ArrayList<WarMaterial> warMaterials;
     private ArrayList<Warehouse> warehouses;
     private ArrayList<Control> controls;
->>>>>>> 1a7b3a9eae6b12871bf64f5f97f5f581c892284d
+
 
     public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Warehouse> warehouses, ArrayList<Control> controls) {
         this.name = name;
@@ -70,7 +69,6 @@ public class Warehouse {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
         return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
     }
 
@@ -81,9 +79,8 @@ public class Warehouse {
         this.number = number;
         this.yearFundation = yearFundation;
         this.weapons = weapons;
-=======
-        return "Warehouse{" + "name=" + getName() + ", country=" + getCountry() + ", city=" + getCity() + ", number=" + getNumber() + ", yearFundation=" + getYearFundation() + '}';
->>>>>>> 1a7b3a9eae6b12871bf64f5f97f5f581c892284d
+
+      
     }
 
    
@@ -189,61 +186,5 @@ public class Warehouse {
     }
 
 }
-=======
-     * @return the ammunitions
-     */
-    public ArrayList<Ammunition> getAmmunitions() {
-        return ammunitions;
-    }
 
-    /**
-     * @param ammunitions the ammunitions to set
-     */
-    public void setAmmunitions(ArrayList<Ammunition> ammunitions) {
-        this.ammunitions = ammunitions;
-    }
-
-    /**
-     * @return the warMaterials
-     */
-    public ArrayList<WarMaterial> getWarMaterials() {
-        return warMaterials;
-    }
-
-    /**
-     * @param warMaterials the warMaterials to set
-     */
-    public void setWarMaterials(ArrayList<WarMaterial> warMaterials) {
-        this.warMaterials = warMaterials;
-    }
-
-    /**
-     * @return the warehouses
-     */
-    public ArrayList<Warehouse> getWarehouses() {
-        return warehouses;
-    }
-
-    /**
-     * @param warehouses the warehouses to set
-     */
-    public void setWarehouses(ArrayList<Warehouse> warehouses) {
-        this.warehouses = warehouses;
-    }
-
-    /**
-     * @return the controls
-     */
-    public ArrayList<Control> getControls() {
-        return controls;
-    }
-
-    /**
-     * @param controls the controls to set
-     */
-    public void setControls(ArrayList<Control> controls) {
-        this.controls = controls;
-    }
-
-}
->>>>>>> 1a7b3a9eae6b12871bf64f5f97f5f581c892284d
+  

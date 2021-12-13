@@ -13,10 +13,7 @@ import java.util.ArrayList;
  *
 <<<<<<< HEAD
  * @author ASUS
- * @author JOSE SANCHEZ
-=======
- * @author Alexander Ruano, Leandro Quinga , Javier Paucar
->>>>>>> 1a7b3a9eae6b12871bf64f5f97f5f581c892284d
+ * @author Alexander Ruano, Leandro Quinga , Javier Paucar, Jose Sanchez;
  */
 public class ControlWeaponSystem {
 
@@ -39,10 +36,8 @@ public class ControlWeaponSystem {
 
         System.out.println("\n------->Sanchez Jose<-------");
         Weapon weapon = new Weapon();
-<<<<<<< HEAD
         ArrayList<Weapon> weapons = new ArrayList<>();
-=======
->>>>>>> 1a7b3a9eae6b12871bf64f5f97f5f581c892284d
+
         System.out.println("Weapon is --->" + weapon);
 
         System.out.println("\n------->Leandro Quinga<-------");
