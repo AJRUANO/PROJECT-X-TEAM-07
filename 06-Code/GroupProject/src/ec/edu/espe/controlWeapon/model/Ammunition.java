@@ -12,19 +12,20 @@ public class Ammunition {
     private String color;
     private String model;
 
+
     public void save() {
 
     }
 
-    private void delete() {
+    public void delete() {
 
     }
 
-    private void organize() {
+    public void organize() {
 
     }
 
-    private void use() {
+    public void use() {
 
     }
 
@@ -39,6 +40,7 @@ public class Ammunition {
         this.model = model;
     }
 
+ 
     public Ammunition() {
 
         System.out.println("\n---------------> DATA Ammunition1 <--------------");

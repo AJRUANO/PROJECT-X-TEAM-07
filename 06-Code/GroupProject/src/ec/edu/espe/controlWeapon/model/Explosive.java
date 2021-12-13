@@ -14,7 +14,7 @@ public class Explosive {
     private String name;
     private int amount;
 
-    public void doExploted() {
+    public void explote() {
 
     }
 
