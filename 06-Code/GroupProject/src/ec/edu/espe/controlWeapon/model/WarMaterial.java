@@ -12,6 +12,7 @@ public class WarMaterial {
     private String color;
     private String model;
 
+
     public void save() {
 
     }
