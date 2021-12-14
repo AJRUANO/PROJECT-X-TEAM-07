@@ -7,7 +7,8 @@ import java.util.Scanner;
  *
  * @author Javier Paucar
  * @author Alexander Ruano
- * @author Leandro Quinga 
+ * @author Leandro Quinga
+ * @author Paul Saltos
  */
 public class Warehouse {
 
@@ -16,14 +17,14 @@ public class Warehouse {
     private String city;
     private int number;
     private int yearFundation;
-    private ArrayList<Explosive>explosives;
+    private ArrayList<Explosive> explosives;
     private ArrayList<Ammunition> ammunitions;
     private ArrayList<WarMaterial> warMaterials;
     private ArrayList<Weapon> weapons;
     private ArrayList<Warehouse> warehouses;
     private ArrayList<Control> controls;
+    private ArrayList<Time> time;
 
-    
     private void security() {
 
     }
@@ -44,10 +45,10 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "Warehouse{" + "name=" + name + ", country=" + country + ", city=" + city + ", number=" + number + ", yearFundation=" + yearFundation + '}';
+        return "Warehouse{" + "name=" + getName() + ", country=" + getCountry() + ", city=" + getCity() + ", number=" + getNumber() + ", yearFundation=" + getYearFundation() + '}';
     }
 
-    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Explosive> explosives, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Weapon> weapons, ArrayList<Warehouse> warehouses, ArrayList<Control> controls) {
+    public Warehouse(String name, String country, String city, int number, int yearFundation, ArrayList<Explosive> explosives, ArrayList<Ammunition> ammunitions, ArrayList<WarMaterial> warMaterials, ArrayList<Weapon> weapons, ArrayList<Warehouse> warehouses, ArrayList<Control> controls, ArrayList<Time> time) {
         this.name = name;
         this.country = country;
         this.city = city;
@@ -59,9 +60,8 @@ public class Warehouse {
         this.weapons = weapons;
         this.warehouses = warehouses;
         this.controls = controls;
+        this.time = time;
     }
-    
-    
 
     public Warehouse() {
         System.out.println("\n--------> DATA Warehouse 1 <--------");
@@ -149,7 +149,7 @@ public class Warehouse {
     }
 
     /**
-
+     *
      * @return the weapons
      */
     public ArrayList<Weapon> getWeapons() {
@@ -164,5 +164,3 @@ public class Warehouse {
     }
 
 }
-
-  

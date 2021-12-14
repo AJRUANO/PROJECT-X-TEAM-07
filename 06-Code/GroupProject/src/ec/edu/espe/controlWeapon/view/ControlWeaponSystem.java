@@ -13,7 +13,7 @@ import java.util.ArrayList;
  *
 <<<<<<< HEAD
  * @author ASUS
- * @author Alexander Ruano, Leandro Quinga , Javier Paucar, Jose Sanchez;
+ * @author Alexander Ruano, Leandro Quinga , Javier Paucar, Jose Sanchez, Paul Saltos;
  */
 public class ControlWeaponSystem {
 
@@ -46,6 +46,7 @@ public class ControlWeaponSystem {
         System.out.println("Explosive is --->" + explosive);
 
         System.out.println("\n------->Paul Saltos<-------");
+        ArrayList<Time>times = new ArrayList<>();
         Time time = new Time();
         System.out.println("Time is --->" + time);
 
