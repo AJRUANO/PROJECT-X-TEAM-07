@@ -5,6 +5,9 @@ package ec.edu.espe.controlerWapon.view;
  *
  * @author ALexander Ruano
  * @author Leandro Quinga
+ * @author Javier Paucar
+ * @author Jose Sanchez
+ * @author Paul Saltos
  */
 public class FrmControler extends javax.swing.JFrame {
 
