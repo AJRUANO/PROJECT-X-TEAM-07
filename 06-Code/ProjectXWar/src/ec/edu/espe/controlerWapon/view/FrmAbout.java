@@ -4,11 +4,10 @@ package ec.edu.espe.controlerWapon.view;
 /**
  *
  * @author Alexander Ruano
- * @author Alexander Ruano
  * @author Leandro Quinga
  * @author Javier Paucar
  * @author Jose Sanchez
- * @author Paul Salto
+ * @author Paul Saltos
  */
 public class FrmAbout extends javax.swing.JFrame {
 
@@ -193,6 +192,7 @@ public class FrmAbout extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(FrmAbout.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

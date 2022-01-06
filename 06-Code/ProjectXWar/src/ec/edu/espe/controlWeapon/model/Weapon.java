@@ -1,4 +1,4 @@
-package ec.edu.espe.controlerWeapon.model;
+package ec.edu.espe.controlWeapon.model;
 
 
 /**
