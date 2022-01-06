@@ -9,6 +9,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author Alexander Ruano
+ * @author Leandro Quinga
  */
 public class FrmWeapon extends javax.swing.JFrame {
 
