@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
-<<<<<<< HEAD
+
  * @author ASUS
  * @author Alexander Ruano, Leandro Quinga , Javier Paucar, Jose Sanchez;
  */
