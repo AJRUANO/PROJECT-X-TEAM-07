@@ -12,6 +12,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author Alexander Ruano
+ * @author Leandro Quinga
  */
 public class FrmAmmunition extends javax.swing.JFrame {
     ArrayList<Ammunition>ammunitions;
