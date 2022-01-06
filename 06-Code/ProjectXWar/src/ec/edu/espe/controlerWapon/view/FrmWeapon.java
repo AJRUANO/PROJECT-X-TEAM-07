@@ -1,11 +1,10 @@
 
-package ec.edu.espe.controlWeapon.view;
+package ec.edu.espe.controlerWapon.view;
 
 import ec.edu.espe.controlerWeapon.model.Weapon;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
 /**
  *
  * @author Alexander Ruano
