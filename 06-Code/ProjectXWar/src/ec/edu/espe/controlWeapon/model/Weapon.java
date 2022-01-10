@@ -1,7 +1,6 @@
 package ec.edu.espe.controlWeapon.model;
 
 
-
 /**
  *
  * @author Alexander Ruano
@@ -10,46 +9,42 @@ package ec.edu.espe.controlWeapon.model;
  * @author Jose Sanchez
  * @author Paul Saltos
  */
-public class Ammunition {
+public class Weapon {
 
     private String name;
     private String color;
     private String model;
+    private String serie;
+    private String type;
     private String deliveryOfDay;
     private String DayOfExit;
 
-
-    public void save() {
-
-    }
-
-    public void delete() {
+    public void propeelProyectiles() {
 
     }
 
-    public void organize() {
-
-    }
-
-    public void use() {
+    private void destroy() {
 
     }
 
     @Override
     public String toString() {
-        return "Ammunition{" + "name=" + getName() + ", color=" + getColor() + ", model=" + getModel() + ", deliveryOfDay=" + getDeliveryOfDay() + ", DayOfExit=" + getDayOfExit() + '}';
+        return "Weapon{" + "name=" + getName() + ", color=" + getColor() + ", model=" + getModel() + ", serie=" + getSerie() + ", type=" + getType() + ", deliveryOfDay=" + getDeliveryOfDay() + ", DayOfExit=" + getDayOfExit() + '}';
     }
 
-    public Ammunition(String name, String color, String model, String deliveryOfDay, String DayOfExit) {
+    public Weapon(String name, String color, String model, String serie, String type, String deliveryOfDay, String DayOfExit) {
         this.name = name;
         this.color = color;
         this.model = model;
+        this.serie = serie;
+        this.type = type;
         this.deliveryOfDay = deliveryOfDay;
         this.DayOfExit = DayOfExit;
     }
 
- 
-    public Ammunition() {
+
+    public Weapon() {
+
 
     }
 
@@ -93,6 +88,34 @@ public class Ammunition {
      */
     public void setModel(String model) {
         this.model = model;
+    }
+
+    /**
+     * @return the serie
+     */
+    public String getSerie() {
+        return serie;
+    }
+
+    /**
+     * @param serie the serie to set
+     */
+    public void setSerie(String serie) {
+        this.serie = serie;
+    }
+
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(String type) {
+        this.type = type;
     }
 
     /**

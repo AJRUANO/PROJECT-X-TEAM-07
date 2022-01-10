@@ -1,0 +1,83 @@
+;;; -*- Mode: LISP; package:maxima; syntax:common-lisp; -*- 
+(in-package :maxima)
+(MDEFPROP $POLAR2C
+    ((LAMBDA) ((MLIST) $R $ANG)
+     ((MPROG) ((MLIST) $X $Y)
+      ((MSETQ) $X
+       ((MTIMES) $R ((%COS) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.))))
+      ((MSETQ) $Y
+       ((MTIMES) $R ((%SIN) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.))))
+      ((MRETURN) ((MPLUS) $X ((MTIMES) $Y $%I)))))
+    MEXPR) 
+(ADD2LNC '(($POLAR2C) $R $ANG) $FUNCTIONS) 
+(MDEFPROP $C2POLAR
+    ((LAMBDA) ((MLIST) $C)
+     ((MPROG) ((MLIST) $POL $R $ANG) ((MSETQ) $POL (($POLARFORM) $C))
+      (($PRINT) (($CABS) $POL) "⊾"
+       (($FLOAT) ((MQUOTIENT) ((MTIMES) (($CARG) $POL) 180.) $%PI))
+       "°")
+      ((MRETURN) $POL)))
+    MEXPR) 
+(ADD2LNC '(($C2POLAR) $C) $FUNCTIONS) 
+(MDEFPROP $COSD
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%COS) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($COSD) $ANG) $FUNCTIONS) 
+(MDEFPROP $SIND
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%SIN) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($SIND) $ANG) $FUNCTIONS) 
+(MDEFPROP $TAND
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%TAN) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($TAND) $ANG) $FUNCTIONS) 
+(MDEFPROP $COTD
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%COT) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($COTD) $ANG) $FUNCTIONS) 
+(MDEFPROP $SECD
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%SEC) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($SECD) $ANG) $FUNCTIONS) 
+(MDEFPROP $CSCD
+    ((LAMBDA) ((MLIST) $ANG)
+     ((%CSC) ((MQUOTIENT) ((MTIMES) $ANG $%PI) 180.)))
+    MEXPR) 
+(ADD2LNC '(($CSCD) $ANG) $FUNCTIONS) 
+(MDEFPROP $ATAND
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ATAN) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ATAND) $X) $FUNCTIONS) 
+(MDEFPROP $ASIND
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ASIN) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ASIND) $X) $FUNCTIONS) 
+(MDEFPROP $ACOSD
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ACOS) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ACOSD) $X) $FUNCTIONS) 
+(MDEFPROP $ACOTD
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ACOT) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ACOTD) $X) $FUNCTIONS) 
+(MDEFPROP $ASECD
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ASEC) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ASECD) $X) $FUNCTIONS) 
+(MDEFPROP $ACSCD
+    ((LAMBDA) ((MLIST) $X)
+     ((MQUOTIENT) ((MTIMES) ((%ACSC) $X) 180.) $%PI))
+    MEXPR) 
+(ADD2LNC '(($ACSCD) $X) $FUNCTIONS) 
+(DSKSETQ $J '$%I) 
+(ADD2LNC '$J $VALUES) 
