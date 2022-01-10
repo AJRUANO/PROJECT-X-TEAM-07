@@ -16,6 +16,7 @@ public class Weapon {
     private String model;
     private String serie;
     private String type;
+    private String value;
     private String deliveryOfDay;
     private String DayOfExit;
 
@@ -29,18 +30,22 @@ public class Weapon {
 
     @Override
     public String toString() {
-        return "Weapon{" + "name=" + getName() + ", color=" + getColor() + ", model=" + getModel() + ", serie=" + getSerie() + ", type=" + getType() + ", deliveryOfDay=" + getDeliveryOfDay() + ", DayOfExit=" + getDayOfExit() + '}';
+        return "Weapon{" + "name=" + getName() + ", color=" + getColor() + ", model=" + getModel() + ", serie=" + getSerie() + ", type=" + getType() + ", value=" + getValue() + ", deliveryOfDay=" + getDeliveryOfDay() + ", DayOfExit=" + getDayOfExit() + '}';
     }
 
-    public Weapon(String name, String color, String model, String serie, String type, String deliveryOfDay, String DayOfExit) {
+    public Weapon(String name, String color, String model, String serie, String type, String value, String deliveryOfDay, String DayOfExit) {
         this.name = name;
         this.color = color;
         this.model = model;
         this.serie = serie;
         this.type = type;
+        this.value = value;
         this.deliveryOfDay = deliveryOfDay;
         this.DayOfExit = DayOfExit;
     }
+
+
+
 
 
     public Weapon() {
@@ -119,6 +124,20 @@ public class Weapon {
     }
 
     /**
+     * @return the value
+     */
+    public String getValue() {
+        return value;
+    }
+
+    /**
+     * @param value the value to set
+     */
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    /**
      * @return the deliveryOfDay
      */
     public String getDeliveryOfDay() {
@@ -145,6 +164,8 @@ public class Weapon {
     public void setDayOfExit(String DayOfExit) {
         this.DayOfExit = DayOfExit;
     }
+
+
 
 
 
