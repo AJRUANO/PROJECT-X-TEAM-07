@@ -13,12 +13,12 @@ import com.mongodb.client.MongoDatabase;
  */
 public class MongoConnection {
 
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://alexanderPonce:ajruano@cluster0.gyqyw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://jfsanchez15:jfsanchez15@cluster0.pvcrw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
          .applyConnectionString(connectionString)
           .build();
         MongoClient mongoClient = MongoClients.create(settings);
-        MongoDatabase database = mongoClient.getDatabase("Supplies");
+        MongoDatabase database = mongoClient.getDatabase("Warehouse");
 
     
     
