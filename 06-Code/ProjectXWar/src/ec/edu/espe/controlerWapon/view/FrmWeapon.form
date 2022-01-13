@@ -29,15 +29,22 @@
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
+<<<<<<< HEAD
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="txtExiDay" min="-2" pref="158" max="-2" attributes="0"/>
+=======
+                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="txtValue" min="-2" pref="178" max="-2" attributes="0"/>
+>>>>>>> 2423be7657b77104b8958d9e80933c0695f7d683
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="txtName" min="-2" pref="208" max="-2" attributes="0"/>
                           </Group>
+<<<<<<< HEAD
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -60,6 +67,10 @@
                                   <Component id="btnRemove" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+=======
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+>>>>>>> 2423be7657b77104b8958d9e80933c0695f7d683
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   </Group>
@@ -96,6 +107,11 @@
               </Group>
               <Component id="jScrollPane1" min="-2" pref="801" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
+=======
+              <Component id="jScrollPane1" min="-2" pref="800" max="-2" attributes="0"/>
+              <EmptySpace pref="7" max="32767" attributes="0"/>
+>>>>>>> 2423be7657b77104b8958d9e80933c0695f7d683
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -146,6 +162,7 @@
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtSerie" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
+<<<<<<< HEAD
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -153,6 +170,24 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txtDeliDay" min="-2" max="-2" attributes="0"/>
+=======
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtValue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="btnInventory" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtInventory" min="-2" pref="37" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+>>>>>>> 2423be7657b77104b8958d9e80933c0695f7d683
                           </Group>
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -289,9 +324,13 @@
     </Component>
     <Component class="com.toedter.calendar.JDateChooser" name="txtExiDay">
     </Component>
+<<<<<<< HEAD
     <Component class="com.toedter.calendar.JDateChooser" name="txtDeliDay">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
+=======
+    <Component class="javax.swing.JLabel" name="jLabel9">
+>>>>>>> 2423be7657b77104b8958d9e80933c0695f7d683
       <Properties>
         <Property name="text" type="java.lang.String" value="VALUE INTEGER:"/>
       </Properties>
