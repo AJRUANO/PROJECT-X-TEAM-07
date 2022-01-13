@@ -13,7 +13,7 @@ import com.mongodb.client.MongoDatabase;
  */
 public class MongoConnection {
 
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://jfsanchez15:jfsanchez15@cluster0.pvcrw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://ajpaucar:ajpaucar@clusteroop.jvwrx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
          .applyConnectionString(connectionString)
           .build();
