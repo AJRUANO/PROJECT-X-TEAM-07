@@ -24,7 +24,7 @@ import utils.MongoConnection;
 public class FrmWeapon extends javax.swing.JFrame {
     
     Calendar fecha_actual = new GregorianCalendar();
-    MongoCollection<Document> Weapon = new MongoConnection().obtenerDB().getCollection("weapon");
+    MongoCollection<Document> Weapon = new MongoConnection().obtenerDB().getCollection("Weapons");
     DefaultTableModel table = new DefaultTableModel() {
 
         @Override
@@ -111,7 +111,7 @@ public class FrmWeapon extends javax.swing.JFrame {
 
         jLabel1.setText("NAME:");
 
-        jLabel2.setText("COLOR:");
+        jLabel2.setText("TYPE");
 
         jLabel3.setText("MODEL:");
 
