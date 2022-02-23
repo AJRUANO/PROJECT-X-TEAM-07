@@ -61,7 +61,7 @@ public class FrmAmmunition extends javax.swing.JFrame {
             table.removeRow(0);
         }
         while (query.hasNext()) {
-            ArrayList<Object> doc = new ArrayList<Object>(query.next().values());
+            ArrayList<Object> doc = new ArrayList<>(query.next().values());
             table.addRow(doc.toArray());
         }
     }
