@@ -1,5 +1,5 @@
 
-package ec.edu.espe.controlerWapon.view;
+package ec.edu.espe.controlWapon.View;
 
 /**
  *

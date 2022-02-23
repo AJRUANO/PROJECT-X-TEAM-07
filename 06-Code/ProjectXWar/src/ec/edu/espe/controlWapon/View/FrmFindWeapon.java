@@ -1,5 +1,5 @@
 
-package ec.edu.espe.controlerWapon.view;
+package ec.edu.espe.controlWapon.View;
 
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.result.DeleteResult;

@@ -1,5 +1,5 @@
 
-package ec.edu.espe.controlerWapon.view;
+package ec.edu.espe.controlWapon.View;
 
 /**
  *
@@ -96,22 +96,22 @@ public class FrmControler extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addComponent(jLabel2)
-                .addGap(35, 35, 35))
+                .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(140, 140, 140)
                     .addComponent(jLabel1)
-                    .addContainerGap(141, Short.MAX_VALUE)))
+                    .addContainerGap(147, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
+                .addGap(100, 100, 100)
                 .addComponent(jLabel2)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(140, 140, 140)

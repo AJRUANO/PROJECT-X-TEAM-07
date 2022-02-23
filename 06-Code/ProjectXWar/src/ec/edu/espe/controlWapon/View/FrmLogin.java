@@ -1,5 +1,5 @@
 
-package ec.edu.espe.controlerWapon.view;
+package ec.edu.espe.controlWapon.View;
 
 import javax.swing.JOptionPane;
 
@@ -58,6 +58,11 @@ public class FrmLogin extends javax.swing.JFrame {
                 btnEnterActionPerformed(evt);
             }
         });
+        btnEnter.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnEnterKeyPressed(evt);
+            }
+        });
 
         btnExit.setText("EXIT");
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -99,24 +104,25 @@ public class FrmLogin extends javax.swing.JFrame {
                                 .addComponent(lblUser)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel1)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(13, 13, 13))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnExit)))
-                .addContainerGap(91, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(149, 149, 149))
+                        .addComponent(btnExit))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(151, 151, 151)
+                        .addComponent(jLabel2)))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(46, 46, 46)
+                .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUser)
                     .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -165,9 +171,10 @@ public class FrmLogin extends javax.swing.JFrame {
                 txtPassword.setText("");
                 txtUserName.setText("");
             }
+        }
     }//GEN-LAST:event_btnEnterMouseClicked
 
-    }
+    
     private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
     System.exit(0);
     }//GEN-LAST:event_btnExitMouseClicked
@@ -177,8 +184,12 @@ public class FrmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_btnEnterActionPerformed
+
+    private void btnEnterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnEnterKeyPressed
+    
+    }//GEN-LAST:event_btnEnterKeyPressed
 
     /**
      * @param args the command line arguments
